@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>telran.spring</groupId>
-	<artifactId>spring-introduction</artifactId>
+	<artifactId>web-exceptions-handler</artifactId>
 	<version>0.0.1</version>
 	<name>web-exceptions-handler</name>
 	<description>Exceptions Handler Library</description>
