@@ -40,7 +40,7 @@ public class GlobalExceptionsHandler {
 	}
 	
 
-	@ExceptionHandler(ConstraintViolationException.class)
+	@ExceptionHandler(ConstraintViolationException.class)	
 	ResponseEntity<String> constraintViolation(ConstraintViolationException e) {
 		String errorMessage = e.getConstraintViolations().stream()
 				.map(er -> er.getPropertyPath() + ": " + er.getMessage()).collect(Collectors.joining(";"));
