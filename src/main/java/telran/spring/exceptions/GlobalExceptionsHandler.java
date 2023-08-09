@@ -38,6 +38,7 @@ public class GlobalExceptionsHandler {
 		log.error(errorMessage);
 		return new ResponseEntity<>(errorMessage, HttpStatus.BAD_REQUEST);
 	}
+	
 
 	@ExceptionHandler(ConstraintViolationException.class)
 	ResponseEntity<String> constraintViolation(ConstraintViolationException e) {
