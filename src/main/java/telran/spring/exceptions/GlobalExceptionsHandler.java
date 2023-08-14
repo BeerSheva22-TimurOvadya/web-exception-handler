@@ -19,7 +19,7 @@ public class GlobalExceptionsHandler {
 	static Logger log = LoggerFactory.getLogger(GlobalExceptionsHandler.class);
 	@ExceptionHandler(NotFoundException.class)
 	ResponseEntity<String> notFoundHandler(NotFoundException e) {
-		String errorMessage = e.getMessage();
+		String errorMessage = e.getMessage();		
 		log.error(errorMessage);
 		return new ResponseEntity<>(errorMessage, HttpStatus.NOT_FOUND);
 	}
